@@ -1,6 +1,6 @@
 <?php
 namespace app\controllers;
-
+use app\models\TaskCreate;
 use yii\web\Controller;
 
 class TaskController extends Controller
@@ -12,6 +12,7 @@ class TaskController extends Controller
     
     public function actionCreate()
     {
-        return $this->render('index', ['model' => new TaskCreate()]);
+        $model = \Yii::createObject(TaskCreate::class);
+        return $this->render('index', compact('model'));
     }
 }

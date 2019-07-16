@@ -1,11 +1,9 @@
 <?php
 /* @var $this yii\web\View */
 
+use yii\helpers\Html;
+use app\models\Task;
 $model = new Task();
-
-return $this->render('view', [
-    'model' => $model,
-]);
 ?>
 
 <h1><?=$model->taskTitle; ?></h1>
