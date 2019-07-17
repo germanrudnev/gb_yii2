@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container" style="">
-      <div class="row" style="">
+    <div class="container">
+      <div class="row">
         <div class="col-md-6 col-12">
-          <h1 class="pb-2" style="">Задачи на сегодня</h1>
+          <h1>Задачи на сегодня</h1>
         </div>
-        <div class="col-md-2" style=""></div>
+        <div class="col-md-2"></div>
         <div class="col-md-2 text-right col-5 pb-3"><a class="btn btn-primary" href="#">Календарь</a></div>
         <div class="text-right col-md-2 col-7 pb-3"><a class="btn btn-secondary" href="#">+ Новая задача</a></div>
       </div>

@@ -3,7 +3,6 @@
 
 use yii\helpers\Html;
 use app\models\Task;
-$model = new Task();
 ?>
 
 <h1><?=$model->taskTitle; ?></h1>

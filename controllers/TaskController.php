@@ -13,6 +13,13 @@ class TaskController extends Controller
     public function actionCreate()
     {
         $model = \Yii::createObject(TaskCreate::class);
-        return $this->render('index', compact('model'));
+        return $this->render('create/index', ['model' => new TaskCreate()]);
+    }
+    
+    public function actionSubmit()
+    {
+        $formModel = new TaskCreate();
+        $formModel->load(\Yii::$app->request->post());
+        return $this->render('create/submit', ['model' => $formModel]);
     }
 }
